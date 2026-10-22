@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_mini_label">Melody 正在播放</string>
+    <string name="widget_mini_desc">单行播放缩略图，可直接切歌</string>
+</resources>

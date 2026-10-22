@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 银色 CD 光碟：碟面 + 斜向高光 + 细密纹路 + 外圈高光 + 金属轴心 + 中心孔 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 银色碟面 -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:gradientRadius="0.55"
+                android:startColor="#FDFDFF"
+                android:centerColor="#E3E4EA"
+                android:endColor="#BFC1CC" />
+        </shape>
+    </item>
+
+    <!-- 斜向高光（角度不对称，转动时能看出来） -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="linear"
+                android:angle="315"
+                android:startColor="#55FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- 碟面细密纹路 -->
+    <item>
+        <shape android:shape="ring" android:useLevel="false"
+            android:innerRadiusRatio="2.1" android:thicknessRatio="600">
+            <stroke android:width="1dp" android:color="#26FFFFFF" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="ring" android:useLevel="false"
+            android:innerRadiusRatio="2.7" android:thicknessRatio="600">
+            <stroke android:width="1dp" android:color="#26FFFFFF" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="ring" android:useLevel="false"
+            android:innerRadiusRatio="3.6" android:thicknessRatio="600">
+            <stroke android:width="1dp" android:color="#26FFFFFF" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="ring" android:useLevel="false"
+            android:innerRadiusRatio="4.8" android:thicknessRatio="600">
+            <stroke android:width="1dp" android:color="#26FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- 外圈高光 -->
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="1.5dp" android:color="#B0FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- 金属轴心 -->
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:width="20dp" android:height="20dp" />
+            <gradient
+                android:type="linear"
+                android:angle="315"
+                android:startColor="#EDEDF2"
+                android:centerColor="#C6C7CF"
+                android:endColor="#9A9BA6" />
+        </shape>
+    </item>
+
+    <!-- 中心孔 -->
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:width="7dp" android:height="7dp" />
+            <solid android:color="#1A1822" />
+            <stroke android:width="1dp" android:color="#80FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
